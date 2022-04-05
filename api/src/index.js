@@ -24,7 +24,7 @@ const startServer = () => {
     const silence = new Post({ name: 'Silence' })
     silence.save((err, saveSilence) => {
       if (err) return console.log(err)
-      console.log('saveSilence', saveSilence)
+      console.log('saveSilence with volumes', saveSilence)
     })
     // console.log(silence.name)
   })
