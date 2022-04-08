@@ -1,6 +1,12 @@
 version: '3'
 
 services:
+  frontend:
+    command: yarn start
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./frontend/src:/usr/src/app/src
   api:
     command: yarn run dev
     volumes:
